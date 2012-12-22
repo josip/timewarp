@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <title>timewarp - The Go Programming Language</title>
+
+<link type="text/css" rel="stylesheet" href="http://localhost:8080/doc/style.css">
+<script type="text/javascript" src="http://localhost:8080/doc/godocs.js"></script>
+
+</head>
+<body>
+
+<div id="topbar"><div class="container wide">
+
+<form method="GET" action="http://localhost:8080/search">
+<div id="menu">
+<a href="http://localhost:8080/doc/">Documents</a>
+<a href="http://localhost:8080/ref/">References</a>
+<a href="index.html">Packages</a>
+<a href="http://localhost:8080/project/">The Project</a>
+<a href="http://localhost:8080/help/">Help</a>
+<input type="text" id="search" name="q" class="inactive" value="Search">
+</div>
+<div id="heading"><a href="http://localhost:8080/">The Go Programming Language</a></div>
+</form>
+
+</div></div>
+
+<div id="page" class="wide">
+
+
+  <div id="plusone"><g:plusone size="small" annotation="none"></g:plusone></div>
+  <h1>Package timewarp</h1>
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "."</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index">Index</a></dd>
+			
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+			</div>
+		</div>
+		
+	
+		<h2 id="pkg-index">Index</h2>
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+		<div id="manual-nav">
+			<dl>
+			
+			
+			
+			
+				
+				<dd><a href="index.html#TimeWarp">type TimeWarp</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Now">func Now() TimeWarp</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Today">func Today() TimeWarp</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Tomorrow">func Tomorrow() TimeWarp</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Warp">func Warp(t time.Time) TimeWarp</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Yesterday">func Yesterday() TimeWarp</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TimeWarp.Add">func (t TimeWarp) Add(args ...int) TimeWarp</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TimeWarp.AddDays">func (t TimeWarp) AddDays(d int) TimeWarp</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TimeWarp.AddHours">func (t TimeWarp) AddHours(h int) TimeWarp</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TimeWarp.AddMinutes">func (t TimeWarp) AddMinutes(m int) TimeWarp</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TimeWarp.AddSeconds">func (t TimeWarp) AddSeconds(s int) TimeWarp</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TimeWarp.AddWeeks">func (t TimeWarp) AddWeeks(w int) TimeWarp</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TimeWarp.BeginningOfDay">func (t TimeWarp) BeginningOfDay() TimeWarp</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TimeWarp.EndOfDay">func (t TimeWarp) EndOfDay() TimeWarp</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TimeWarp.FirstDayOfWeek">func (t TimeWarp) FirstDayOfWeek(startsWith time.Weekday) TimeWarp</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TimeWarp.IsChristmas">func (t TimeWarp) IsChristmas() bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TimeWarp.IsFriday">func (t TimeWarp) IsFriday() bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TimeWarp.Last">func (t TimeWarp) Last(day time.Weekday) TimeWarp</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TimeWarp.Next">func (t TimeWarp) Next(day time.Weekday) TimeWarp</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TimeWarp.Since">func (t TimeWarp) Since(now TimeWarp) string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TimeWarp.Sub">func (t TimeWarp) Sub(args ...int) TimeWarp</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TimeWarp.SubDays">func (t TimeWarp) SubDays(d int) TimeWarp</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TimeWarp.SubHours">func (t TimeWarp) SubHours(h int) TimeWarp</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TimeWarp.SubMinutes">func (t TimeWarp) SubMinutes(m int) TimeWarp</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TimeWarp.SubSeconds">func (t TimeWarp) SubSeconds(s int) TimeWarp</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TimeWarp.SubWeeks">func (t TimeWarp) SubWeeks(w int) TimeWarp</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TimeWarp.This">func (t TimeWarp) This(day time.Weekday) TimeWarp</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TimeWarp.Tomorrow">func (t TimeWarp) Tomorrow() TimeWarp</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TimeWarp.Yesterday">func (t TimeWarp) Yesterday() TimeWarp</a></dd>
+				
+			
+			
+		</dl>
+
+		
+
+		
+			<h4>Package files</h4>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:8080/src/pkg/timewarp.go">timewarp.go</a>
+			
+			</span>
+			</p>
+		
+	
+		
+		
+		
+		
+			
+			
+			<h2 id="TimeWarp">type <a href="http://localhost:8080/src/pkg/timewarp.go?s=59:100#L1">TimeWarp</a></h2>
+			<pre>type TimeWarp struct {
+    Time time.Time
+}</pre>
+			
+
+			
+
+			
+
+			
+
+			
+				
+				<h3 id="Now">func <a href="http://localhost:8080/src/pkg/timewarp.go?s=240:259#L9">Now</a></h3>
+				<pre>func Now() TimeWarp</pre>
+				<p>
+Now returns warped current time.
+</p>
+
+				
+			
+				
+				<h3 id="Today">func <a href="http://localhost:8080/src/pkg/timewarp.go?s=334:355#L14">Today</a></h3>
+				<pre>func Today() TimeWarp</pre>
+				<p>
+Today returns midnight at today&#39;s date.
+</p>
+
+				
+			
+				
+				<h3 id="Tomorrow">func <a href="http://localhost:8080/src/pkg/timewarp.go?s=431:455#L19">Tomorrow</a></h3>
+				<pre>func Tomorrow() TimeWarp</pre>
+				<p>
+Tomorrow returns today+1 at 00:00.
+</p>
+
+				
+			
+				
+				<h3 id="Warp">func <a href="http://localhost:8080/src/pkg/timewarp.go?s=146:177#L4">Warp</a></h3>
+				<pre>func Warp(t time.Time) TimeWarp</pre>
+				<p>
+Warp a time.Time struct into a TimeWarp.
+</p>
+
+				
+			
+				
+				<h3 id="Yesterday">func <a href="http://localhost:8080/src/pkg/timewarp.go?s=528:553#L24">Yesterday</a></h3>
+				<pre>func Yesterday() TimeWarp</pre>
+				<p>
+Yesterday returns today-1 at 00:00.
+</p>
+
+				
+			
+
+			
+				
+				<h3 id="TimeWarp.Add">func (TimeWarp) <a href="http://localhost:8080/src/pkg/timewarp.go?s=773:816#L31">Add</a></h3>
+				<pre>func (t TimeWarp) Add(args ...int) TimeWarp</pre>
+				<p>
+Add adds a duration relative to t. Arguments are defined as as follows:
+hours, minutes, seconds, milliseconds, microseconds, nanoseconds
+Use 0 to leave the property unmodifed.
+</p>
+
+				
+				
+			
+				
+				<h3 id="TimeWarp.AddDays">func (TimeWarp) <a href="http://localhost:8080/src/pkg/timewarp.go?s=937:978#L40">AddDays</a></h3>
+				<pre>func (t TimeWarp) AddDays(d int) TimeWarp</pre>
+				
+				
+				
+			
+				
+				<h3 id="TimeWarp.AddHours">func (TimeWarp) <a href="http://localhost:8080/src/pkg/timewarp.go?s=1007:1049#L44">AddHours</a></h3>
+				<pre>func (t TimeWarp) AddHours(h int) TimeWarp</pre>
+				
+				
+				
+			
+				
+				<h3 id="TimeWarp.AddMinutes">func (TimeWarp) <a href="http://localhost:8080/src/pkg/timewarp.go?s=1076:1120#L48">AddMinutes</a></h3>
+				<pre>func (t TimeWarp) AddMinutes(m int) TimeWarp</pre>
+				
+				
+				
+			
+				
+				<h3 id="TimeWarp.AddSeconds">func (TimeWarp) <a href="http://localhost:8080/src/pkg/timewarp.go?s=1150:1194#L52">AddSeconds</a></h3>
+				<pre>func (t TimeWarp) AddSeconds(s int) TimeWarp</pre>
+				
+				
+				
+			
+				
+				<h3 id="TimeWarp.AddWeeks">func (TimeWarp) <a href="http://localhost:8080/src/pkg/timewarp.go?s=862:904#L36">AddWeeks</a></h3>
+				<pre>func (t TimeWarp) AddWeeks(w int) TimeWarp</pre>
+				
+				
+				
+			
+				
+				<h3 id="TimeWarp.BeginningOfDay">func (TimeWarp) <a href="http://localhost:8080/src/pkg/timewarp.go?s=2509:2552#L120">BeginningOfDay</a></h3>
+				<pre>func (t TimeWarp) BeginningOfDay() TimeWarp</pre>
+				<p>
+BeginningOfDay sets hours:minutes to 00:00
+</p>
+
+				
+				
+			
+				
+				<h3 id="TimeWarp.EndOfDay">func (TimeWarp) <a href="http://localhost:8080/src/pkg/timewarp.go?s=2698:2735#L127">EndOfDay</a></h3>
+				<pre>func (t TimeWarp) EndOfDay() TimeWarp</pre>
+				<p>
+EndOfDay sets hours:minutes to 23:59
+</p>
+
+				
+				
+			
+				
+				<h3 id="TimeWarp.FirstDayOfWeek">func (TimeWarp) <a href="http://localhost:8080/src/pkg/timewarp.go?s=2974:3040#L135">FirstDayOfWeek</a></h3>
+				<pre>func (t TimeWarp) FirstDayOfWeek(startsWith time.Weekday) TimeWarp</pre>
+				<p>
+FirstDayOfWeek returns date of the first day in the week
+First day (ie. time.Monday or time.Sunday) has to be manually specified.
+</p>
+
+				
+				
+			
+				
+				<h3 id="TimeWarp.IsChristmas">func (TimeWarp) <a href="http://localhost:8080/src/pkg/timewarp.go?s=3584:3620#L153">IsChristmas</a></h3>
+				<pre>func (t TimeWarp) IsChristmas() bool</pre>
+				<p>
+IsItChristmas returns true on Christmas day, false otherwise
+</p>
+
+				
+				
+			
+				
+				<h3 id="TimeWarp.IsFriday">func (TimeWarp) <a href="http://localhost:8080/src/pkg/timewarp.go?s=3440:3473#L148">IsFriday</a></h3>
+				<pre>func (t TimeWarp) IsFriday() bool</pre>
+				<p>
+IsItFriday returns true on Friday, false otherwise
+</p>
+
+				
+				
+			
+				
+				<h3 id="TimeWarp.Last">func (TimeWarp) <a href="http://localhost:8080/src/pkg/timewarp.go?s=2376:2425#L115">Last</a></h3>
+				<pre>func (t TimeWarp) Last(day time.Weekday) TimeWarp</pre>
+				<p>
+Last occurance of the specified weekday.
+</p>
+
+				
+				
+			
+				
+				<h3 id="TimeWarp.Next">func (TimeWarp) <a href="http://localhost:8080/src/pkg/timewarp.go?s=2245:2294#L110">Next</a></h3>
+				<pre>func (t TimeWarp) Next(day time.Weekday) TimeWarp</pre>
+				<p>
+Next occurance of the specified weekday.
+</p>
+
+				
+				
+			
+				
+				<h3 id="TimeWarp.Since">func (TimeWarp) <a href="http://localhost:8080/src/pkg/timewarp.go?s=3271:3315#L142">Since</a></h3>
+				<pre>func (t TimeWarp) Since(now TimeWarp) string</pre>
+				<p>
+Hours, seconds and minutes that have
+</p>
+
+				
+				
+			
+				
+				<h3 id="TimeWarp.Sub">func (TimeWarp) <a href="http://localhost:8080/src/pkg/timewarp.go?s=1257:1300#L57">Sub</a></h3>
+				<pre>func (t TimeWarp) Sub(args ...int) TimeWarp</pre>
+				<p>
+Subtracts duration from t.
+</p>
+
+				
+				
+			
+				
+				<h3 id="TimeWarp.SubDays">func (TimeWarp) <a href="http://localhost:8080/src/pkg/timewarp.go?s=1421:1462#L66">SubDays</a></h3>
+				<pre>func (t TimeWarp) SubDays(d int) TimeWarp</pre>
+				
+				
+				
+			
+				
+				<h3 id="TimeWarp.SubHours">func (TimeWarp) <a href="http://localhost:8080/src/pkg/timewarp.go?s=1491:1533#L70">SubHours</a></h3>
+				<pre>func (t TimeWarp) SubHours(h int) TimeWarp</pre>
+				
+				
+				
+			
+				
+				<h3 id="TimeWarp.SubMinutes">func (TimeWarp) <a href="http://localhost:8080/src/pkg/timewarp.go?s=1557:1601#L74">SubMinutes</a></h3>
+				<pre>func (t TimeWarp) SubMinutes(m int) TimeWarp</pre>
+				
+				
+				
+			
+				
+				<h3 id="TimeWarp.SubSeconds">func (TimeWarp) <a href="http://localhost:8080/src/pkg/timewarp.go?s=1628:1672#L78">SubSeconds</a></h3>
+				<pre>func (t TimeWarp) SubSeconds(s int) TimeWarp</pre>
+				
+				
+				
+			
+				
+				<h3 id="TimeWarp.SubWeeks">func (TimeWarp) <a href="http://localhost:8080/src/pkg/timewarp.go?s=1346:1388#L62">SubWeeks</a></h3>
+				<pre>func (t TimeWarp) SubWeeks(w int) TimeWarp</pre>
+				
+				
+				
+			
+				
+				<h3 id="TimeWarp.This">func (TimeWarp) <a href="http://localhost:8080/src/pkg/timewarp.go?s=1947:1996#L93">This</a></h3>
+				<pre>func (t TimeWarp) This(day time.Weekday) TimeWarp</pre>
+				<p>
+Date of this weeks&#39; specified day.
+</p>
+
+				
+				
+			
+				
+				<h3 id="TimeWarp.Tomorrow">func (TimeWarp) <a href="http://localhost:8080/src/pkg/timewarp.go?s=1739:1776#L83">Tomorrow</a></h3>
+				<pre>func (t TimeWarp) Tomorrow() TimeWarp</pre>
+				<p>
+Tomorrow returns the day after t.
+</p>
+
+				
+				
+			
+				
+				<h3 id="TimeWarp.Yesterday">func (TimeWarp) <a href="http://localhost:8080/src/pkg/timewarp.go?s=1843:1881#L88">Yesterday</a></h3>
+				<pre>func (t TimeWarp) Yesterday() TimeWarp</pre>
+				<p>
+Yesterday returns the day before t.
+</p>
+
+				
+				
+			
+		
+		</div>
+	
+
+	
+
+
+
+
+
+
+
+
+
+</div>
+
+<div id="footer">
+Build version go1.0.3.<br>
+Except as <a href="http://code.google.com/policies.html#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:8080/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:8080/doc/tos.html">Terms of Service</a> | 
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</body>
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+</html>
+
