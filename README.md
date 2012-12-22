@@ -3,7 +3,7 @@ _A time travelling library for Go._
 
 
 ## Using timewarp ##
-`TimeWarp` is a thin <strike>warpper</strike>wrapper around Go's built-in [time](http://golang.org/pkg/time) library.
+`TimeWarp` is a thin warpper erm wrapper around Go's built-in [time](http://golang.org/pkg/time) library.
 
 
     package main
