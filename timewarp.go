@@ -15,12 +15,12 @@ func Warp(t time.Time) TimeWarp {
   return TimeWarp{t}
 }
 
-// Now returns warped current time.
+// Now warps current time.
 func Now() TimeWarp {
   return Warp(time.Now())
 }
 
-// Today returns midnight at today's date.
+// Today sets hh:mm to 00:00 for today's date.
 func Today() TimeWarp {
   return Now().BeginningOfDay()
 }
@@ -154,12 +154,12 @@ func (t TimeWarp) Since(now TimeWarp) string {
   return d.String()
 }
 
-// IsItFriday returns true on Friday, false otherwise
+// IsFriday returns true on Friday, false otherwise
 func (t TimeWarp) IsFriday() bool {
   return t.Time.Weekday() == time.Friday
 }
 
-// IsItChristmas returns true on Christmas day, false otherwise
+// IsChristmas returns true on Christmas day, false otherwise
 func (t TimeWarp) IsChristmas() bool {
   _, m, d := t.BeginningOfDay().Time.Date()
   return m == time.December && d == 25
