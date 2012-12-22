@@ -5,7 +5,6 @@ _A time travelling library for Go._
 ## Using timewarp ##
 `TimeWarp` is a thin warpper erm wrapper around Go's built-in [time](http://golang.org/pkg/time) library.
 
-
     package main
     import (
       "fmt"
@@ -23,7 +22,8 @@ Please remember at all times that `Time` property returns the underlying `time.T
 
 ### Basics ###
 
-“Adding” or ”subtracting“ hours/minutes/seconds to/from the warped date can be performed with `Add` and `Sub` methods, respectively.
+“Adding” or ”subtracting“ hours/minutes/seconds to/from the warped date can be performed with `Add` and `Sub` methods,
+respectively.
 
     now.Add(h, m, s, ms, µs, ns)
     now.Sub(h, m, s, ms, µs, ns)
@@ -48,7 +48,8 @@ Methods `BeginningOfDay` and `EndOfDay` modify hh:mm:ss to 00:00:00 and 23:59:59
 
     now.FirstDayOfWeek(time.Monday)
 
-`FirstDayOfWeek` returns date (at midnight) of the first day in the week - `time.Monday` if you're in the Europe, `time.Sunday` if you're in the US or `time.Friday` if you're a certain internet celebrity.
+`FirstDayOfWeek` returns date (at midnight) of the first day in the week - `time.Monday` if you're in the Europe,
+`time.Sunday` if you're in the US or `time.Friday` if you're a certain internet celebrity.
 
 `This` is a generalised version of the previously mentioned method, it returns the date of a day in the current week:
 
@@ -77,5 +78,8 @@ Timewarp packs a few more methods to stop you from repeating yourself (a common 
 
 Both `Tomorrow` and `Yesterday` are also available as methods on `TimeWrap` structs.
 
-## Licence ##
+### One one more thing… ###
+Generated godocs are available [josip.github.com/timewarp](http://josip.github.com/timewarp).
+
+## License ##
 Timewarp is freely available under MMIT licence.
