@@ -52,15 +52,15 @@ func (t TimeWarp) AddDays(d int) TimeWarp {
 }
 
 func (t TimeWarp) AddHours(h int) TimeWarp {
-  return t.Add(0, h)
+  return t.Add(h)
 }
 
 func (t TimeWarp) AddMinutes(m int) TimeWarp {
-  return t.Add(0, 0, m)
+  return t.Add(0, m)
 }
 
 func (t TimeWarp) AddSeconds(s int) TimeWarp {
-  return t.Add(0, 0, 0, s)
+  return t.Add(0, 0, s)
 }
 
 // Subtracts duration from t.
